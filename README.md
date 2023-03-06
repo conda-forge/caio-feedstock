@@ -1,11 +1,11 @@
-About caio
-==========
+About caio-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/caio-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/mosquito/caio
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/caio-feedstock/blob/main/LICENSE.txt)
 
 Summary: Asynchronous file IO for Linux Posix and Windows.
 
