@@ -13,7 +13,8 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<36]
+  # OSX does not support fdatasync
+  skip: true  # [py<36 or osx]
 
 requirements:
   build:
