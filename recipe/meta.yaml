@@ -19,10 +19,11 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
+    - {{ stdlib('c') }}
   host:
     - pip
     - python
+    - setuptools
   run:
     - python
 
