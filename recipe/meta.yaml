@@ -11,10 +11,10 @@ source:
   sha256: bdcb529330730c4c364b79789620f33bafad8c2c854c1205ecc2d16511c0b690
 
 build:
-  number: 1
+  number: 2
   script:
     # FIXME: Avoid 'ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]' error on osx builds
-    - export CFLAGS="$CFLAGS -Wno-implicit-function-declaration"  # [osx and x86]
+    - export CFLAGS="$CFLAGS -Wno-implicit-function-declaration"  # [osx]
     - {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<36]
 
@@ -22,6 +22,8 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
+    - cross-python_{{ target_platform }}  # [build_platform != target_platform]
+    - python  # [build_platform != target_platform]
   host:
     - pip
     - python
