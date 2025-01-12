@@ -1,5 +1,5 @@
 {% set name = "caio" %}
-{% set version = "0.9.19" %}
+{% set version = "0.9.20" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/caio-{{ version }}.tar.gz
-  sha256: bdcb529330730c4c364b79789620f33bafad8c2c854c1205ecc2d16511c0b690
+  sha256: cf6b7392f797bb32e539f7acb4d8f38ae69a6d2dadf3dcda3eea5f27c9fe08a8
 
 build:
-  number: 2
+  number: 0
   script:
     # FIXME: Avoid 'ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]' error on osx builds
     - export CFLAGS="$CFLAGS -Wno-implicit-function-declaration"  # [osx]
