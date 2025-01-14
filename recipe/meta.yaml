@@ -1,5 +1,5 @@
 {% set name = "caio" %}
-{% set version = "0.9.20" %}
+{% set version = "0.9.21" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/caio-{{ version }}.tar.gz
-  sha256: cf6b7392f797bb32e539f7acb4d8f38ae69a6d2dadf3dcda3eea5f27c9fe08a8
+  sha256: 4f1d30ad0f975de07b4a3ae1cd2e9275fa574f2ca0b49ba5ab16208575650a92
 
 build:
   number: 0
