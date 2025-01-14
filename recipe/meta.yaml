@@ -13,8 +13,6 @@ source:
 build:
   number: 0
   script:
-    # FIXME: Avoid 'ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]' error on osx builds
-    - export CFLAGS="$CFLAGS -Wno-implicit-function-declaration"  # [osx]
     - {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<36]
 
