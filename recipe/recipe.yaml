@@ -46,7 +46,7 @@ tests:
 about:
   summary: Asynchronous file IO for Linux Posix and Windows.
   license: Apache-2.0
-  license_file: LICENSE
+  license_file: COPYING
   homepage: https://github.com/mosquito/caio
 
 extra:
