@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: caio
-  version: "0.9.22"
+  version: "0.9.24"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/caio-${{ version }}.tar.gz
-  sha256: 7ea533d90e5fa0bba33bc8f4805b4c90f19e8d8ac5139a8033b92a6ab5c4012b
+  sha256: 5bcdecaea02a9aa8e3acf0364eff8ad9903d57d70cdb274a42270126290a77f1
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
   host:
     - pip
     - python
-    - setuptools >=42
+    - setuptools >=77
   run:
     - python
 
@@ -46,7 +46,7 @@ tests:
 about:
   summary: Asynchronous file IO for Linux Posix and Windows.
   license: Apache-2.0
-  license_file: LICENSE
+  license_file: COPYING
   homepage: https://github.com/mosquito/caio
 
 extra:
