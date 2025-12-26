@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: caio
-  version: "0.9.24"
+  version: "0.9.25"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/caio-${{ version }}.tar.gz
-  sha256: 5bcdecaea02a9aa8e3acf0364eff8ad9903d57d70cdb274a42270126290a77f1
+  sha256: 16498e7f81d1d0f5a4c0ad3f2540e65fe25691376e0a5bd367f558067113ed10
 
 build:
-  number: 1
+  number: 0
   skip: match(python, "<3.6")
   script:
     - ${{ PYTHON }} -m pip install . -vv
