@@ -14,7 +14,9 @@ source:
 
 build:
   number: 0
-  skip: match(python, "<3.6")
+  # requires-python is 3.10+
+  # c.f. https://github.com/mosquito/caio/blob/bf8da967679914a8879501db386168bd8e3ece76/pyproject.toml#L11
+  skip: match(python, "<3.10")
   script:
     - ${{ PYTHON }} -m pip install . -vv
 
@@ -37,11 +39,7 @@ tests:
   - python:
       imports:
         - caio
-  - requirements:
-      run:
-        - pip
-    script:
-      - pip check
+      pip_check: true
 
 about:
   summary: Asynchronous file IO for Linux Posix and Windows.
