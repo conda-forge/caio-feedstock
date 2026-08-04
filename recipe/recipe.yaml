@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.11.1"
+  version: "0.12.1"
 
 package:
   name: caio
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/caio/caio-${{ version }}.tar.gz
-  sha256: 9bb12af0108acbcdd7da07ca614c06a8fad108ae19f12540569333cfda931f7d
+  sha256: a4946880547f34579a5ee5c6110efd155d0522029c3279c5c6942098aa7b7144
 
 build:
   number: 0
