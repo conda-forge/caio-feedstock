@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.12.5"
+  version: "0.12.6"
 
 package:
   name: caio
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/caio/caio-${{ version }}.tar.gz
-  sha256: 3b28842db82f83dfc4d7a8578585d2ef792a9a889069b7f5e1bddab94d2d1605
+  sha256: bbc7d31e871d0e0ab05db14b258a8c9893eda7e17190678f00bf83d2cf158859
 
 build:
   number: 0
@@ -18,8 +18,8 @@ build:
 
 requirements:
   build:
-    - ${{ compiler('c') }}
-    - ${{ stdlib('c') }}
+    - ${{ compiler("c") }}
+    - ${{ stdlib("c") }}
     - if: build_platform != target_platform
       then:
         - cross-python_${{ target_platform }}
@@ -42,6 +42,7 @@ about:
   license: Apache-2.0
   license_file: COPYING
   homepage: https://github.com/mosquito/caio
+  repository: https://github.com/mosquito/caio
 
 extra:
   recipe-maintainers:
