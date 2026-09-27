@@ -9,6 +9,8 @@ Package license: Apache-2.0
 
 Summary: Asynchronous file IO for Linux Posix and Windows.
 
+Development: https://github.com/mosquito/caio
+
 Current build status
 ====================
 
